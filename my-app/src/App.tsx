@@ -3,10 +3,11 @@ import { AppBar } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import AppTitle from "./components/AppTitle";
+import SideBar from "./components/SideBar";
 function App() {
   return (
     <>
-      <AppBar color="primary" className="root">
+      <AppBar color="primary">
         <Stack direction="row">
           <Avatar
             variant="rounded"
@@ -18,9 +19,7 @@ function App() {
           <AppTitle>Anirban Acharya</AppTitle>
         </Stack>
       </AppBar>
-      <div className="footer">
-        Powered by Vite, Coded with ❤️ by Anirban Acharya
-      </div>
+      <SideBar>{["About", "Skills", "Experience", "My Notes"]}</SideBar>
     </>
   );
 }

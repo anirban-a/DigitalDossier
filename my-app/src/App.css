@@ -7,6 +7,8 @@
 
 .logo {
   margin-right: 25%;
+  margin-top: 0.4%;
+  margin-left: 0.4%;
   /* In case I want the logo to spin, uncomment the below */
   /* animation: logo-spin 2s linear infinite; */
 }
@@ -36,4 +38,5 @@
   bottom: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 100%;
+  /* height: 1.2%; */
 }
