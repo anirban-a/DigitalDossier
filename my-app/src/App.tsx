@@ -18,6 +18,9 @@ function App() {
           <AppTitle>Anirban Acharya</AppTitle>
         </Stack>
       </AppBar>
+      <div className="footer">
+        Powered by Vite, Coded with ❤️ by Anirban Acharya
+      </div>
     </>
   );
 }
