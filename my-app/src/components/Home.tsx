@@ -3,6 +3,7 @@ import TextWrap from "./TextWrap";
 // import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
+import Slide from "@mui/material/Slide";
 
 interface AboutProps {
   children: string;
@@ -10,7 +11,7 @@ interface AboutProps {
 }
 export default function Home({ children, open }: AboutProps) {
   return (
-    <div className={`drawer ${open ? "open" : ""}`}>
+    <Slide direction="up" in={open} mountOnEnter unmountOnExit>
       <Card
         sx={{
           width: 700,
@@ -26,6 +27,6 @@ export default function Home({ children, open }: AboutProps) {
           <TextWrap>{children}</TextWrap>
         </CardContent>
       </Card>
-    </div>
+    </Slide>
   );
 }

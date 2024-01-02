@@ -1,10 +1,10 @@
 .drawer {
-    width: 250px;
+    /* width: 250px;
     height: 100%;
     position: fixed;
     top: 0;
     left: -250px;
-    background-color: #3c3c3c;
+    background-color: #3c3c3c; */
     transition: left 0.3s ease;
   }
   
