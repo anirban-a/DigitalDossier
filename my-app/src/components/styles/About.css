@@ -10,5 +10,6 @@
   
   .drawer.open {
     left: 0;
+    width: 95%;
   }
   

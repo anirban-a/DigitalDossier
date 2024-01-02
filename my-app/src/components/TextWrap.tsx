@@ -7,7 +7,7 @@ interface TextWrapProps {
 }
 export default function TextWrap({ children }: TextWrapProps) {
   return (
-    <Box component="main" sx={{ p: 3 }}>
+    <Box component="main" sx={{ p: 3, textAlign: "justify" }}>
       <Toolbar />
       <Typography>{children}</Typography>
     </Box>
