@@ -11,6 +11,21 @@ const theme = responsiveFontSizes(
         main: "#f5f5f5", // Replace with your secondary color
       },
     },
+
+    typography: {
+      fontFamily: [
+        "-apple-system",
+        "BlinkMacSystemFont",
+        '"Segoe UI"',
+        "Roboto",
+        '"Helvetica Neue"',
+        "Arial",
+        "sans-serif",
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+      ].join(","),
+    },
   })
 );
 

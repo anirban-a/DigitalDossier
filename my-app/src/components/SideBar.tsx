@@ -4,6 +4,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
+import Typography from "@mui/material/Typography";
 
 import "./styles/SideBar.css";
 
@@ -16,12 +17,12 @@ export default function SideBar({ children }: SideBarProps) {
     <div className="container">
       <Box
         sx={{
-          bgcolor: "background.paper",
+          bgcolor: "background",
           display: "flex",
           flexWrap: "wrap",
           "& > :not(style)": {
             m: 1,
-            width: 120,
+            width: 180,
           },
         }}
       >
@@ -30,7 +31,11 @@ export default function SideBar({ children }: SideBarProps) {
             {children.map((item, idx) => (
               <ListItem disablePadding key={idx}>
                 <ListItemButton>
-                  <ListItemText primary={item} />
+                  <ListItemText>
+                    <Typography fontFamily={"Helvetica Neue"} fontSize={20}>
+                      {item}
+                    </Typography>
+                  </ListItemText>
                 </ListItemButton>
               </ListItem>
             ))}

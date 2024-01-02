@@ -6,7 +6,11 @@ interface PageTitleProps {
 
 export default function AppTitle({ children }: PageTitleProps) {
   return (
-    <Typography variant="h2" className="navbar bg-body-tertiary">
+    <Typography
+      variant="h2"
+      fontFamily={"Helvetica Neue"}
+      className="navbar bg-body-tertiary"
+    >
       {children}
     </Typography>
   );

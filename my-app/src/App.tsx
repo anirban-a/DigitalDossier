@@ -4,6 +4,7 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import AppTitle from "./components/AppTitle";
 import SideBar from "./components/SideBar";
+
 function App() {
   return (
     <>
