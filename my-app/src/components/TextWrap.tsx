@@ -9,7 +9,7 @@ export default function TextWrap({ children }: TextWrapProps) {
   return (
     <Box component="main" sx={{ p: 3, textAlign: "justify" }}>
       <Toolbar />
-      <Typography>{children}</Typography>
+      <Typography variant="body1">{children}</Typography>
     </Box>
   );
 }

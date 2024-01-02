@@ -16,7 +16,7 @@ export default function Skills({ open }: SkillsProps) {
           // height: 430,
           position: "absolute",
           top: 200,
-          left: 300,
+          left: 530,
           borderBottom: 64,
           borderBottomColor: "#db9c28",
         }}
