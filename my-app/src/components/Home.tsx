@@ -1,6 +1,6 @@
 import "./styles/About.css";
 import TextWrap from "./TextWrap";
-// import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Slide from "@mui/material/Slide";
@@ -24,6 +24,17 @@ export default function Home({ children, open }: AboutProps) {
         }}
       >
         <CardContent>
+          <Typography
+            variant="h4"
+            sx={{
+              marginBottom: -4,
+              marginLeft: 2.5,
+              marginTop: 3,
+              color: "#db9c28",
+            }}
+          >
+            Hello there!
+          </Typography>
           <TextWrap>{children}</TextWrap>
         </CardContent>
       </Card>
