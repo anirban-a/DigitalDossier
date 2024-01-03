@@ -1,14 +1,16 @@
 import Star from "./Star";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import Avatar from "@mui/material/Avatar";
 
 interface SkillsProps {
   skill: string;
   level: number;
   maxRange: number;
+  imgUrl: string;
 }
 
-export default function Skill({ skill, level, maxRange }: SkillsProps) {
+export default function Skill({ skill, level, maxRange, imgUrl }: SkillsProps) {
   // add Skill Name, followed by Stars
   const calculateStars = () => {
     const base: number = Math.floor(level);
@@ -36,8 +38,27 @@ export default function Skill({ skill, level, maxRange }: SkillsProps) {
 
   return (
     <Box>
+      <Avatar
+        src={imgUrl}
+        sx={{
+          width: 40,
+          height: 40,
+          top: -2,
+          //   left: 70,
+          position: "relative",
+          // right: 20,
+        }}
+        variant="rounded"
+      />
       <Typography
-        sx={{ flexGrow: 1, display: { xs: "none", sm: "contents" } }}
+        sx={{
+          flexGrow: 1,
+          display: {
+            xs: "none",
+            sm: "contents",
+            position: "absolute",
+          },
+        }}
         // fontWeight={10}
         // fontSize={13}
         // fontFamily={"monospace"}
