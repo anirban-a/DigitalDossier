@@ -3,6 +3,7 @@ import TextWrap from "./TextWrap";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Slide from "@mui/material/Slide";
+import ExperienceStepper from "./ExperienceStepper";
 
 interface ExperienceProps {
   open: boolean;
@@ -12,17 +13,19 @@ export default function Experience({ open }: ExperienceProps) {
     <Slide direction="up" in={open} mountOnEnter unmountOnExit>
       <Card
         sx={{
-          width: 700,
+          width: 930,
           // height: 430,
           position: "absolute",
-          top: 200,
+          top: 70,
           left: 530,
           borderBottom: 64,
           borderBottomColor: "#db9c28",
+          height: 720,
         }}
       >
         <CardContent>
-          <TextWrap>Experience goes here</TextWrap>
+          <ExperienceStepper />
+          {/* <TextWrap>Experience goes here</TextWrap> */}
         </CardContent>
       </Card>
     </Slide>
