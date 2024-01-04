@@ -13,6 +13,7 @@ export default function RadialChart({ data, labels }: ChartProps) {
       // chart options here:
       options: {
         labels: labels,
+        outerHeight: 100,
         colors: [
           "#d47718",
           "#ff3b0d",
@@ -92,8 +93,8 @@ export default function RadialChart({ data, labels }: ChartProps) {
       options={state.chart.options}
       series={state.chart.series}
       type={"polarArea"}
-      width={500}
-      height={300}
+      width={700}
+      height={1000}
     />
   );
 }

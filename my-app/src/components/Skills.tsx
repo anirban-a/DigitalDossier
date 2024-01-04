@@ -32,13 +32,14 @@ export default function Skills({ open }: SkillsProps) {
     <Slide direction="up" in={open} mountOnEnter unmountOnExit>
       <Card
         sx={{
-          width: 700,
+          width: 930,
           // height: 430,
           position: "absolute",
-          top: 200,
+          top: 70,
           left: 530,
           borderBottom: 64,
           borderBottomColor: "#db9c28",
+          height: 720,
         }}
       >
         <CardContent>
