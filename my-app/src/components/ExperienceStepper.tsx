@@ -79,7 +79,7 @@ export default function ExperienceStepper() {
     <Box sx={{ maxHeight: 720, maxWidth: 930, overflow: "scroll" }}>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
-          <Step key={step.label}>
+          <Step key={index}>
             <StepLabel>
               <Typography variant="h6">{step.label}</Typography>
             </StepLabel>

@@ -34,6 +34,7 @@ export default function Contact({ open }: ContactProps) {
                 <a
                   href="https://www.linkedin.com/in/anirban-acharya/"
                   target="blank"
+                  style={{ textDecoration: "none", color: "white" }}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +51,11 @@ export default function Contact({ open }: ContactProps) {
 
               <Grid item>
                 {/* Email */}
-                <a href="mailto:anirbana20@gmail.com">
+                <a
+                  href="mailto:anirbana20@gmail.com"
+                  target="blank"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="60"
@@ -67,7 +72,11 @@ export default function Contact({ open }: ContactProps) {
 
               <Grid item>
                 {/* Github */}
-                <a href="https://github.com/anirban-a">
+                <a
+                  href="https://github.com/anirban-a"
+                  target="blank"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="60"

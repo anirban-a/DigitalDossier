@@ -50,13 +50,20 @@ export default function MenuBar() {
         <CssBaseline />
         <AppBar component="nav">
           <Toolbar>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            <Button
+              sx={{ marginRight: 110, color: "#fff" }}
+              key={"name_tag"}
+              onClick={() => toggleTab(0)}
             >
-              ANIRBAN ACHARYA
-            </Typography>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+              >
+                ANIRBAN ACHARYA
+              </Typography>
+            </Button>
+
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item, idx) => (
                 <Button
