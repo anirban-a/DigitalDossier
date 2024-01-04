@@ -22,8 +22,10 @@ const SkillsData = {
     "Apache Kafka",
     "Spring Boot",
     "Elastic Search",
+    "TypeScript",
+    "ReactJS",
   ],
-  rating: [3, 4, 1.5, 3.5, 4, 2, 3, 3, 4, 1.5],
+  rating: [3, 4, 1.5, 3.5, 4, 2, 3, 3, 4, 1.5, 2, 1.5],
 };
 export default function Skills({ open }: SkillsProps) {
   return (
@@ -45,6 +47,7 @@ export default function Skills({ open }: SkillsProps) {
             height={125}
             width={125}
             right={20}
+            top={35}
           />
           <CardContent>
             <RadialChart
