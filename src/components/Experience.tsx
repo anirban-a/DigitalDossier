@@ -12,14 +12,16 @@ export default function Experience({ open }: ExperienceProps) {
     <Slide direction="up" in={open} mountOnEnter unmountOnExit>
       <Card
         sx={{
-          width: 930,
+          width: "55vw",
           // height: 430,
           position: "absolute",
           top: 70,
-          left: 530,
+          right: 14,
           borderBottom: 64,
           borderBottomColor: "#db9c28",
-          height: 720,
+          height: "91vh",
+          maxHeight: 900,
+          maxWidth: 1060,
         }}
       >
         <CardContent>

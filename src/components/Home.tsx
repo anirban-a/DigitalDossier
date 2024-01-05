@@ -14,13 +14,18 @@ export default function Home({ children, open }: AboutProps) {
     <Slide direction="up" in={open} mountOnEnter unmountOnExit>
       <Card
         sx={{
-          width: 700,
-          // height: 430,
+          width: "55vw",
+          height: "91vh",
+          maxHeight: 900,
+          maxWidth: 1060,
           position: "absolute",
-          top: 200,
-          left: 530,
+          top: 70,
+          right: 14,
           borderBottom: 64,
           borderBottomColor: "#db9c28",
+          display: "flex",
+          alignItems: "center",
+          // justifyContent: "center",
         }}
       >
         <CardContent>

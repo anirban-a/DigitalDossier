@@ -51,7 +51,10 @@ export default function MenuBar() {
         <AppBar component="nav">
           <Toolbar>
             <Button
-              sx={{ marginRight: 110, color: "#fff" }}
+              sx={{
+                // marginRight: 110,
+                color: "#fff",
+              }}
               key={"name_tag"}
               onClick={() => toggleTab(0)}
             >
@@ -64,7 +67,13 @@ export default function MenuBar() {
               </Typography>
             </Button>
 
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Box
+              sx={{
+                display: { xs: "none", sm: "block" },
+                right: 10,
+                position: "absolute",
+              }}
+            >
               {navItems.map((item, idx) => (
                 <Button
                   key={item}
