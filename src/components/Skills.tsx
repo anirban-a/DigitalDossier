@@ -44,7 +44,7 @@ export default function Skills({ open }: SkillsProps) {
       >
         <CardContent>
           <Badges
-            src="/public/images/leetcode-2023-100.gif"
+            src="assets/leetcode-2023-100.gif"
             height={125}
             width={125}
             right={20}

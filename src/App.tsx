@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Avatar
-        src="/public/images/avataaars.png"
+        src="assets/avataaars.png"
         sizes="100"
         sx={{
           width: 324,
