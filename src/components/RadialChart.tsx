@@ -1,4 +1,5 @@
 import {
+  ResponsiveContainer,
   RadarChart,
   PolarGrid,
   PolarRadiusAxis,
@@ -22,22 +23,24 @@ export default function RadialChart({ data, labels }: ChartProps) {
   console.log(formattedDataList);
 
   return (
-    <RadarChart
-      outerRadius={150}
-      width={730}
-      height={350}
-      data={formattedDataList}
-    >
-      <PolarGrid />
-      <PolarAngleAxis dataKey="skill" />
-      <PolarRadiusAxis angle={45} domain={[0, 4]} />
-      <Radar
-        name="Skills"
-        dataKey="level"
-        stroke="#e23008"
-        fill="#e4b517"
-        fillOpacity={0.6}
-      />
-    </RadarChart>
+    <ResponsiveContainer width={550} height={400}>
+      <RadarChart
+        outerRadius={150}
+        width={730}
+        height={350}
+        data={formattedDataList}
+      >
+        <PolarGrid />
+        <PolarAngleAxis dataKey="skill" />
+        <PolarRadiusAxis angle={45} domain={[0, 4]} />
+        <Radar
+          name="Skills"
+          dataKey="level"
+          stroke="#e23008"
+          fill="#e4b517"
+          fillOpacity={0.6}
+        />
+      </RadarChart>
+    </ResponsiveContainer>
   );
 }
