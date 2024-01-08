@@ -25,7 +25,10 @@ export default function Contact({ open }: ContactProps) {
       >
         <CardContent>
           <Box>
-            <Typography variant="h3" sx={{ color: "#db9c28" }}>
+            <Typography
+              variant="h3"
+              sx={{ color: "#db9c28", fontFamily: "monospace" }}
+            >
               Let's get in touch !
             </Typography>
             <Grid container spacing={5} sx={{ marginTop: 2, marginLeft: 20 }}>

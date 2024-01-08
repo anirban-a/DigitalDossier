@@ -61,7 +61,10 @@ export default function MenuBar() {
               <Typography
                 variant="h6"
                 component="div"
-                sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+                sx={{
+                  flexGrow: 1,
+                  display: { xs: "none", sm: "block", fontFamily: "monospace" },
+                }}
               >
                 ANIRBAN ACHARYA
               </Typography>
@@ -80,7 +83,9 @@ export default function MenuBar() {
                   sx={{ color: "#fff" }}
                   onClick={() => toggleTab(idx)}
                 >
-                  {item}
+                  <Typography sx={{ fontFamily: "monospace" }}>
+                    {item}
+                  </Typography>
                 </Button>
               ))}
             </Box>
@@ -90,18 +95,34 @@ export default function MenuBar() {
 
       <Contact open={contactOpen} />
       <Home open={homeOpen}>
-        I am a graduate student at the Rensselaer Polytechnic Institute,
-        pursuing my MS in Information Technology with a focus on data science
-        and analytics. Before this, I worked as a software engineer for five
-        years, where I gained experience and honed my skills in programming
-        languages, frameworks, and tools. I am a critical thinker who always
-        welcomes new challenges and enjoys learning new skills. I am also a
-        strong communicator who thrives in collaborative work environments to
-        achieve shared goals. Although my background is in software engineering,
-        I have always been highly interested in data science. Therefore, I
-        decided to pursue a graduate degree in this field to deepen my knowledge
-        and expertise. I am excited to be a part of this constantly evolving and
-        challenging field.
+        Welcome to my corner of the web! I'm Anirban Acharya, a seasoned
+        software engineer with a passion for crafting innovative solutions to
+        complex problems. With five years of hands-on experience in the field, I
+        have honed my skills and developed a deep love for coding that goes
+        beyond the professional realm. My journey in the tech world has been
+        nothing short of thrilling. I thrive on the challenges that come with
+        building data-intensive applications and crafting robust distributed
+        systems. One of my true joys is creating developer tools and frameworks
+        that not only streamline the coding process but also contribute to the
+        broader engineering community. I strongly believe that software
+        development is more than just writing code; it's a way to make a
+        meaningful impact and solve real-world problems. The sense of reward
+        that comes from tackling challenges head-on and witnessing the positive
+        effects of my work is what keeps me fueled and motivated. Beyond the
+        confines of software engineering, I have ventured into the realms of
+        data analysis and machine learning, adding a multifaceted dimension to
+        my skill set. Recognizing the importance of continuous learning and
+        growth, I decided to pursue my Master's in Information Technology with a
+        concentration in Data Science and Analytics from the prestigious
+        Rensselaer Polytechnic Institute. My academic journey has not only
+        expanded my knowledge but also deepened my understanding of the
+        intricate world of data. It's this blend of professional experience and
+        academic rigor that allows me to approach problem-solving with a unique
+        perspective. Whether I'm knee-deep in code or exploring the intricacies
+        of data, my enthusiasm for technology remains unwavering. I invite you
+        to explore my portfolio and get a glimpse of the projects that showcase
+        my dedication, creativity, and the relentless pursuit of excellence.
+        Let's embark on a journey of innovation together!
       </Home>
       <Experience open={experienceOpen} />
       <Skills open={skillsOpen} />

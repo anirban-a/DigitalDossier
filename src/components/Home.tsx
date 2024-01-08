@@ -1,5 +1,4 @@
 import "./styles/About.css";
-import TextWrap from "./TextWrap";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -25,22 +24,28 @@ export default function Home({ children, open }: AboutProps) {
           borderBottomColor: "#db9c28",
           display: "flex",
           alignItems: "center",
+          overflow: "auto",
           // justifyContent: "center",
         }}
       >
         <CardContent>
           <Typography
-            variant="h4"
+            variant="h3"
             sx={{
+              fontFamily: "monospace",
               marginBottom: -4,
-              marginLeft: 2.5,
-              marginTop: 3,
+              marginLeft: 0.5,
+              marginTop: 6,
               color: "#db9c28",
             }}
           >
             Hello there!
           </Typography>
-          <TextWrap>{children}</TextWrap>
+          <Typography
+            sx={{ marginTop: 5, padding: 1, fontFamily: "monospace" }}
+          >
+            {children}
+          </Typography>
         </CardContent>
       </Card>
     </Slide>

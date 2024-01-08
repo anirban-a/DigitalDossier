@@ -14,7 +14,7 @@ function renderExperience(experiences: string[]) {
             sx={{ display: "inline", position: "absolute" }}
           ></ArrowRight>
           <Typography
-            sx={{ display: "inline", marginLeft: 3 }}
+            sx={{ display: "inline", marginLeft: 3, fontFamily: "monospace" }}
             component="span"
             variant="body1"
             color="text.primary"
@@ -77,7 +77,7 @@ export default function ExperienceStage({ children }: Prop) {
           m: 1,
           width: 730,
           maxHeight: 328,
-          overflow: "scroll",
+          overflow: "auto",
         },
       }}
     >
