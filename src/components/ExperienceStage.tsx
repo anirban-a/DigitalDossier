@@ -14,7 +14,11 @@ function renderExperience(experiences: string[]) {
             sx={{ display: "inline", position: "absolute" }}
           ></ArrowRight>
           <Typography
-            sx={{ display: "inline", marginLeft: 3, fontFamily: "monospace" }}
+            sx={{
+              display: "inline",
+              marginLeft: 3,
+              fontFamily: '"Helvetica Neue"',
+            }}
             component="span"
             variant="body1"
             color="text.primary"

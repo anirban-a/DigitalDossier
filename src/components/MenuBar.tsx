@@ -12,14 +12,16 @@ import Contact from "./Contact";
 import Home from "./Home";
 import Experience from "./Experience";
 import Skills from "./Skills";
+import BadgesPage from "./BadgesPage";
 
-const navItems = ["Home", "Experience", "Skills", "Contact"];
+const navItems = ["Home", "Experience", "Skills", "Contact", "Badges"];
 
 export default function MenuBar() {
-  const [contactOpen, setContactOpen] = useState(true);
+  const [contactOpen, setContactOpen] = useState(false);
   const [homeOpen, setHomeOpen] = useState(true);
-  const [experienceOpen, setExperienceOpen] = useState(true);
-  const [skillsOpen, setSkillsOpen] = useState(true);
+  const [experienceOpen, setExperienceOpen] = useState(false);
+  const [skillsOpen, setSkillsOpen] = useState(false);
+  const [badgesOpen, setBadgesOpen] = useState(false);
 
   type Setter = (x: boolean) => void;
   const setters: Setter[] = [
@@ -27,6 +29,7 @@ export default function MenuBar() {
     setExperienceOpen,
     setSkillsOpen,
     setContactOpen,
+    setBadgesOpen,
   ];
 
   const toggleTab = (id: number) => {
@@ -34,6 +37,7 @@ export default function MenuBar() {
     // 1 = experience
     // 2 = skills
     // 3 = contact
+    // 4 = badges
     setters[id](true);
     setters.forEach((fn, idx) => {
       if (idx != id) {
@@ -41,8 +45,6 @@ export default function MenuBar() {
       }
     });
   };
-
-  useEffect(() => toggleTab(0), []);
 
   return (
     <>
@@ -63,7 +65,11 @@ export default function MenuBar() {
                 component="div"
                 sx={{
                   flexGrow: 1,
-                  display: { xs: "none", sm: "block", fontFamily: "monospace" },
+                  display: {
+                    xs: "none",
+                    sm: "block",
+                    fontFamily: '"Helvetica Neue"',
+                  },
                 }}
               >
                 ANIRBAN ACHARYA
@@ -83,7 +89,7 @@ export default function MenuBar() {
                   sx={{ color: "#fff" }}
                   onClick={() => toggleTab(idx)}
                 >
-                  <Typography sx={{ fontFamily: "monospace" }}>
+                  <Typography sx={{ fontFamily: '"Helvetica Neue"' }}>
                     {item}
                   </Typography>
                 </Button>
@@ -126,6 +132,7 @@ export default function MenuBar() {
       </Home>
       <Experience open={experienceOpen} />
       <Skills open={skillsOpen} />
+      <BadgesPage open={badgesOpen} />
     </>
   );
 }

@@ -27,7 +27,7 @@ export default function Contact({ open }: ContactProps) {
           <Box>
             <Typography
               variant="h3"
-              sx={{ color: "#db9c28", fontFamily: "monospace" }}
+              sx={{ color: "#db9c28", fontFamily: '"Helvetica Neue"' }}
             >
               Let's get in touch !
             </Typography>

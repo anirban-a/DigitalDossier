@@ -43,13 +43,6 @@ export default function Skills({ open }: SkillsProps) {
         }}
       >
         <CardContent>
-          <Badges
-            src="assets/leetcode-2023-100.gif"
-            height={125}
-            width={125}
-            right={20}
-            top={35}
-          />
           <CardContent>
             <RadialChart
               data={SkillsData.rating}

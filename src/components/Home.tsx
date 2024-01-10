@@ -32,7 +32,7 @@ export default function Home({ children, open }: AboutProps) {
           <Typography
             variant="h3"
             sx={{
-              fontFamily: "monospace",
+              fontFamily: '"Helvetica Neue"',
               marginBottom: -4,
               marginLeft: 0.5,
               marginTop: 6,
@@ -42,7 +42,7 @@ export default function Home({ children, open }: AboutProps) {
             Hello there!
           </Typography>
           <Typography
-            sx={{ marginTop: 5, padding: 1, fontFamily: "monospace" }}
+            sx={{ marginTop: 5, padding: 1, fontFamily: '"Helvetica Neue"' }}
           >
             {children}
           </Typography>
