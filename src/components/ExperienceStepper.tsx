@@ -76,7 +76,7 @@ export default function ExperienceStepper() {
   const handleReset = () => setActiveStep(0);
 
   return (
-    <Box sx={{ maxHeight: 720, maxWidth: 930, overflow: "scroll" }}>
+    <Box sx={{ maxHeight: 720, maxWidth: 930, overflowY: "auto" }}>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={index}>

@@ -1,8 +1,9 @@
-import "./styles/About.css";
+import "./styles/Skills.css";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Slide from "@mui/material/Slide";
 import Badges from "./Badges";
+import Paper from "@mui/material/Paper";
 
 import RadialChart from "./RadialChart";
 
@@ -32,23 +33,61 @@ export default function Skills({ open }: SkillsProps) {
     <Slide direction="up" in={open} mountOnEnter unmountOnExit>
       <Card
         sx={{
-          width: 930,
+          width: "55vw",
+          height: "91vh",
+          maxHeight: 900,
+          maxWidth: 1060,
           // height: 430,
           position: "absolute",
           top: 70,
-          left: 530,
+          right: 14,
           borderBottom: 64,
           borderBottomColor: "#db9c28",
-          height: 720,
+          display: "flex",
+          alignItems: "center",
+          // height: 720,
         }}
       >
         <CardContent>
-          <CardContent>
-            <RadialChart
-              data={SkillsData.rating}
-              labels={SkillsData.skill}
-            ></RadialChart>
-          </CardContent>
+          <RadialChart
+            data={SkillsData.rating}
+            labels={SkillsData.skill}
+          ></RadialChart>
+        </CardContent>
+
+        <CardContent>
+          {/* Badges go here */}
+
+          <Paper
+            elevation={4}
+            sx={{
+              // backgroundColor: "#810048",
+              // color: "#fbe5eb",
+              width: "15vw",
+              maxWidth: 300,
+              position: "absolute",
+              right: 10,
+              top: 20,
+              bottom: 25,
+            }}
+          >
+            <div className="badges_div">
+              <Badges
+                src="assets/leetcode-2023-100.gif"
+                height={125}
+                width={125}
+                // right={20}
+                // top={35}
+              />
+              <Badges
+                src="assets/NCL2023.jpeg"
+                height={125}
+                width={125}
+                // right={20}
+                // top={35}
+              />
+            </div>
+          </Paper>
         </CardContent>
       </Card>
     </Slide>

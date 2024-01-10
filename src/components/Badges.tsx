@@ -5,19 +5,15 @@ interface BadgeProps {
   width: number;
   right?: number;
   left?: number;
-  top: number;
-  position?: string;
+  top?: number;
 }
-export default function Badges({ src, height, width, right, top }: BadgeProps) {
+export default function Badges({ src, height, width }: BadgeProps) {
   return (
     <Avatar
       src={src}
       sx={{
         width: { width },
         height: { height },
-        position: "absolute",
-        right: { right },
-        top: { top },
       }}
       //   variant="circular"
     />

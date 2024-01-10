@@ -5,6 +5,8 @@ import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import ListItemText from "@mui/material/ListItemText";
 import ArrowRight from "@mui/icons-material/ArrowRight";
+import "./styles/ExperienceStage.css";
+
 function renderExperience(experiences: string[]) {
   return (
     <List sx={{ width: "100%", marginLeft: 2, marginBottom: 2 }}>
@@ -81,7 +83,8 @@ export default function ExperienceStage({ children }: Prop) {
           m: 1,
           width: 730,
           maxHeight: 328,
-          overflow: "auto",
+          overflowY: "auto",
+          overflowX: "hidden",
         },
       }}
     >

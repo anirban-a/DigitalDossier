@@ -25,6 +25,7 @@ export default function Home({ children, open }: AboutProps) {
           display: "flex",
           alignItems: "center",
           overflow: "auto",
+          paddingTop: 10,
           // justifyContent: "center",
         }}
       >
@@ -42,7 +43,13 @@ export default function Home({ children, open }: AboutProps) {
             Hello there!
           </Typography>
           <Typography
-            sx={{ marginTop: 5, padding: 1, fontFamily: '"Helvetica Neue"' }}
+            sx={{
+              marginTop: 5,
+              padding: 1,
+              fontFamily: '"Helvetica Neue"',
+              textAlign: "justify",
+              lineHeight: 2,
+            }}
           >
             {children}
           </Typography>

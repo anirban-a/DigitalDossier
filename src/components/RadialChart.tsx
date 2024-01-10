@@ -36,8 +36,8 @@ export default function RadialChart({ data, labels }: ChartProps) {
         <Radar
           name="Skills"
           dataKey="level"
-          stroke="#e23008"
-          fill="#e4b517"
+          stroke="#ac176a"
+          fill="#b64782"
           fillOpacity={0.6}
         />
       </RadarChart>
