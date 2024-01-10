@@ -1,0 +1,30 @@
+/* .drawer {
+   
+    transition: left 0.8s ease;
+  }
+  
+  .drawer.open {
+    left: 0;
+    width: 95%;
+  } */
+
+  .email-span {
+    padding-left: 20px;
+    vertical-align: super;
+    font-weight: bolder;
+  }
+
+  .social-icons {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .social-btn a svg, .social-btn a img{
+    height: 60px;
+    width: 60px;
+  }
+
+
+  

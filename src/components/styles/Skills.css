@@ -22,3 +22,8 @@
     padding-bottom: 30px;
     height: fit-content;
   }
+
+  .hakerrank-badge-problem-solving {
+    height: 125px;
+    width: 125px;
+  }

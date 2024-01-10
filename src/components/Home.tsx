@@ -10,7 +10,7 @@ interface AboutProps {
 }
 export default function Home({ children, open }: AboutProps) {
   return (
-    <Slide direction="up" in={open} mountOnEnter unmountOnExit>
+    <Slide direction="left" in={open} mountOnEnter unmountOnExit>
       <Card
         sx={{
           width: "55vw",

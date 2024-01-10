@@ -1,10 +1,12 @@
 import "./App.css";
 import Avatar from "@mui/material/Avatar";
 import MenuBar from "./components/MenuBar";
+import { CssBaseline, Paper } from "@mui/material";
 
 function App() {
   return (
     <>
+      {/* <CssBaseline /> */}
       <Avatar
         src="assets/avataaars.png"
         sizes="100"

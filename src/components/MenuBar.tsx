@@ -6,7 +6,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import Contact from "./Contact";
 import Home from "./Home";
@@ -14,7 +14,7 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 import BadgesPage from "./BadgesPage";
 
-const navItems = ["Home", "Experience", "Skills", "Contact", "Badges"];
+const navItems = ["Home", "Experience", "Skills", "Contact"];
 
 export default function MenuBar() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -29,7 +29,7 @@ export default function MenuBar() {
     setExperienceOpen,
     setSkillsOpen,
     setContactOpen,
-    setBadgesOpen,
+    // setBadgesOpen,
   ];
 
   const toggleTab = (id: number) => {
@@ -132,7 +132,7 @@ export default function MenuBar() {
       </Home>
       <Experience open={experienceOpen} />
       <Skills open={skillsOpen} />
-      <BadgesPage open={badgesOpen} />
+      {/* <BadgesPage open={badgesOpen} /> */}
     </>
   );
 }

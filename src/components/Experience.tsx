@@ -9,7 +9,7 @@ interface ExperienceProps {
 }
 export default function Experience({ open }: ExperienceProps) {
   return (
-    <Slide direction="up" in={open} mountOnEnter unmountOnExit>
+    <Slide direction="left" in={open} mountOnEnter unmountOnExit>
       <Card
         sx={{
           width: "55vw",
