@@ -11,20 +11,23 @@ import { useState } from "react";
 import Contact from "./Contact";
 import Home from "./Home";
 import Experience from "./Experience";
+import Projects from "./Projects";
 import Skills from "./Skills";
 
-const navItems = ["Home", "Experience", "Skills", "Contact"];
+const navItems = ["Home", "Experience", "Projects", "Skills", "Contact"];
 
 export default function MenuBar() {
   const [contactOpen, setContactOpen] = useState(false);
   const [homeOpen, setHomeOpen] = useState(true);
   const [experienceOpen, setExperienceOpen] = useState(false);
   const [skillsOpen, setSkillsOpen] = useState(false);
+  const [projectsOpen, setProjectsOpen] = useState(false);
 
   type Setter = (x: boolean) => void;
   const setters: Setter[] = [
     setHomeOpen,
     setExperienceOpen,
+    setProjectsOpen,
     setSkillsOpen,
     setContactOpen,
     // setBadgesOpen,
@@ -129,6 +132,7 @@ export default function MenuBar() {
         Let's embark on a journey of innovation together!
       </Home>
       <Experience open={experienceOpen} />
+      <Projects open={projectsOpen} />
       <Skills open={skillsOpen} />
       {/* <BadgesPage open={badgesOpen} /> */}
     </>
