@@ -32,7 +32,7 @@ export default function RadialChart({ data, labels }: ChartProps) {
       >
         <PolarGrid />
         <PolarAngleAxis dataKey="skill" />
-        <PolarRadiusAxis angle={45} domain={[0, 4]} />
+        <PolarRadiusAxis angle={105} domain={[0, 4]} />
         <Radar
           name="Skills"
           dataKey="level"

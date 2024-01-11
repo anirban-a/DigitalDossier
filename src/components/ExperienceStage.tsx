@@ -35,28 +35,24 @@ function renderExperience(experiences: string[]) {
 }
 function ExperienceFactory(experience: number) {
   const experience1 = renderExperience([
-    "Implemented feature for end-to-end creation of captivating ad creatives essential for successful ad campaigns, ensuring high-quality visuals and messaging.",
-    "Developed REST APIs for microservices using the Facebook marketing API, enabling seamless creation and management of the advertising campaigns.",
-    "Established an automation testing framework for the QA team, using JavaScript and Protractor to enhance testing efficiency and accuracy.",
-    "Wrote Python scripts to collect performance statistics for tests, leading to the optimization of the framework's execution time. Achieved a significant improvement, reducing execution time from 60 minutes to 20 minutes, representing a 66.7% enhancement in efficiency.",
+    "Developed microservices using Facebook business manager API, Java, and Spring Boot for digital ad campaign creation and management for Amobee.",
+    "Implemented feature of batch creation of ad campaigns using the Facebook business manager APIs which reduced the remote API calls of the application by 20%.",
+    "Wrote Python scripts to collect and analyze test performance statistics, leading to a remarkable 66.7% reduction in framework execution time, maximizing testing throughput and resource utilization.",
+    "Created automation testing framework using JavaScript, reducing the test case development time by 40%.",
   ]);
   const experience2 = renderExperience([
-    "Implemented targeted bug fixes within the Global HR and Global Payroll modules of Oracle HCM products, contributing to the overall stability and functionality of the software.",
-    "Improved user experience by optimizing database, leading to a notable enhancement in system responsiveness and efficiency.",
-    "Facilitated effective communication with customers to troubleshoot and resolve technical issues related to the products.",
+    "Optimized and fine-tuned database queries and stored procedures for Oracle HCM products, resulting in a 30% reduction in query execution time and improved overall system performance.",
+    "Executed targeted bug fixes and data corruption resolution issues for the products which brought down bug count by 40% with a maximum resolution time of 30 minutes.",
   ]);
   const experience3 = renderExperience([
-    "Built dependency-injection feature for our in-house RESTful application development framework using Java's reflection APIs and graph algorithm.",
-    "Conducted comprehensive research to identify and propose essential features, facilitating the seamless adoption of our development framework by developers. Played a pivotal role in the establishment of best practices, including advocating for test-driven development and coding standards.",
-    "Leveraged expertise in database design to contribute to the efficient structuring of project databases, enhancing overall system performance and reliability.",
-    "Provided mentorship and guidance to junior engineers, fostering their professional growth and contributing to a collaborative and innovative team environment.",
-    "Actively participated in the development of microservices for clients, significantly contributing to the successful execution and timely delivery of projects.",
+    "Developed REST APIs and microservices to manage product orders for Kroger which also involved designing databases for it to support efficient querying of order data, along with spearheading the development of an in-house application development framework (Radon) to help engineers build applications for the client.",
+    "Developed dependency injection feature for Radon using Java Reflection APIs and graph algorithms, achieving a remarkable 30% reduction in code volume and boosting maintainability.",
+    "Led the effort for unit and integration test development improving the test code coverage from 60% to 90%.",
   ]);
   const experience4 = renderExperience([
-    "Primarily I was responsible for developing microservices which were migrated from legacy codebase written in F# .NET to Java using Spring Boot.",
-    "Contributed to the architectural redesign of selected microservices during the migration process, demonstrating a keen ability and interest to optimize system structures and enhance overall performance.",
-    "Effectively leveraged Microsoft Azure technologies, including CosmosDB, Change Feed Processor, and MS SQL Server, to establish a robust and resilient foundation for our microservices. This strategic implementation significantly improved data management, storage, and retrieval capabilities.",
-    "Used Apache Kafka to decouple services and follow the event-driven architecture of our system for ensuring that our systems were robust and fault-tolerant in handling large volume of traffic.",
+    "Migrated legacy F# .NET applications to Java Spring Boot and revamped architecture and system design, ensuring scalability and improved performance.",
+    "Developed REST APIs and microservices for automating the supply chain process, leading to 20% processing time reduction.",
+    "Implemented highly performant Extract-Transform-Load process services using Apache Kafka to synchronize databases for system migration, which processed 25.5 GB of data in under 30 minutes.",
   ]);
 
   switch (experience) {

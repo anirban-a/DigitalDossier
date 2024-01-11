@@ -83,6 +83,7 @@ export default function Contact({ open }: ContactProps) {
                   <a
                     href="https://www.linkedin.com/in/anirban-acharya/"
                     target="_blank"
+                    title="LinkedIn"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +106,11 @@ export default function Contact({ open }: ContactProps) {
                 </div>
                 {/* Github */}
                 <div className="social-btn github-btn">
-                  <a href="https://github.com/anirban-a" target="_blank">
+                  <a
+                    href="https://github.com/anirban-a"
+                    target="_blank"
+                    title="GitHub"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
@@ -150,6 +155,7 @@ export default function Contact({ open }: ContactProps) {
                   <a
                     href="https://discordapp.com/users/anirbana_"
                     target="_blank"
+                    title="Discord"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -171,6 +177,7 @@ export default function Contact({ open }: ContactProps) {
                   <a
                     href="https://leetcode.com/rand0mVariabl3/"
                     target="_blank"
+                    title="Leetcode"
                   >
                     <img src="assets/leetcode.png"></img>
                   </a>
@@ -179,8 +186,22 @@ export default function Contact({ open }: ContactProps) {
                   <a
                     href="https://www.hackerrank.com/profile/anirbana20"
                     target="_blank"
+                    title="Hakerrank"
                   >
                     <img src="assets/hackerrank.png"></img>
+                  </a>
+                </div>
+                <div className="social-btn">
+                  <a
+                    href="https://dev.to/anirbana"
+                    target="_blank"
+                    title="dev.to"
+                  >
+                    <img
+                      className="site-logo__img"
+                      src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                      alt="DEV Community"
+                    ></img>
                   </a>
                 </div>
               </div>

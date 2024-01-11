@@ -12,9 +12,9 @@ const steps = [
   {
     label: (
       <ProjectLabel
-        title="Software Engineer"
-        company="Cybage Software"
-        period="June 2017 to June 2019"
+        title="The Jefferson Project"
+        category="Data Science"
+        period="Spring 2023 to Fall 2023"
       />
     ),
     description: () => (
@@ -26,9 +26,9 @@ const steps = [
   {
     label: (
       <ProjectLabel
-        title="Applications Engineer"
-        company="Oracle India"
-        period="June 2019 to June 2020"
+        title="Alexandria"
+        category="Web Application"
+        period="Fall 2022"
       />
     ),
     description: () => (
@@ -40,9 +40,9 @@ const steps = [
   {
     label: (
       <ProjectLabel
-        title="Senior Software Engineer"
-        company="ZopSmart Technology"
-        period="July 2020 to May 2021"
+        title="Lecture Hall"
+        category="Web Application"
+        period="Fall 2022"
       />
     ),
     description: () => (
@@ -54,9 +54,9 @@ const steps = [
   {
     label: (
       <ProjectLabel
-        title="Software Development Engineer 3"
-        company="Walmart Global Tech"
-        period="May 2021 to July 2022"
+        title="Hand written digit recognition"
+        category="Machine Learning"
+        period="2015"
       />
     ),
     description: () => (
@@ -65,7 +65,7 @@ const steps = [
       </>
     ),
   },
-].reverse();
+];
 
 export default function ProjectStepper() {
   const [activeStep, setActiveStep] = useState(0);

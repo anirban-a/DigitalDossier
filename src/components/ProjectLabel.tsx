@@ -4,11 +4,15 @@ import Grid from "@mui/material/Grid";
 
 interface LabelProps {
   title: string;
-  company: string;
+  category: string;
   period: string;
 }
 
-export default function ProjectLabel({ title, company, period }: LabelProps) {
+export default function ProjectLabel({
+  title,
+  category: company,
+  period,
+}: LabelProps) {
   return (
     <Paper>
       <Grid container spacing={2}>

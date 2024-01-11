@@ -5,69 +5,87 @@ import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import ListItemText from "@mui/material/ListItemText";
 import ArrowRight from "@mui/icons-material/ArrowRight";
-import "./styles/ExperienceStage.css";
+import "./styles/ProjectStage.css";
 
-function renderProject(experiences: string[]) {
+function renderProject(experiences: string[], url: string) {
   return (
     <List sx={{ width: "100%", marginLeft: 2, marginBottom: 2 }}>
       {experiences.map((experience, idx) => (
-        <ListItemText key={idx} sx={{ width: "95%", textAlign: "justify" }}>
-          <ArrowRight
-            sx={{ display: "inline", position: "absolute" }}
-          ></ArrowRight>
-          <Typography
-            sx={{
-              display: "inline",
-              marginLeft: 3,
-              fontFamily: '"Helvetica Neue"',
-            }}
-            component="span"
-            variant="body1"
-            color="text.primary"
-          >
-            {experience}
-          </Typography>
-          <Divider />
-        </ListItemText>
+        <>
+          <ListItemText key={idx} sx={{ width: "95%", textAlign: "justify" }}>
+            <ArrowRight
+              sx={{ display: "inline", position: "absolute" }}
+            ></ArrowRight>
+            <Typography
+              sx={{
+                display: "inline",
+                marginLeft: 3,
+                fontFamily: '"Helvetica Neue"',
+              }}
+              component="span"
+              variant="body1"
+              color="text.primary"
+            >
+              {experience}
+            </Typography>
+            <Divider />
+          </ListItemText>
+        </>
       ))}
+      {url != "" && (
+        <a href={url} className="project-link" target="_blank">
+          <Typography sx={{ fontWeight: "bolder" }}>Github link</Typography>
+        </a>
+      )}
     </List>
   );
 }
 function ProjectFactory(experience: number) {
-  const experience1 = renderProject([
-    "Implemented feature for end-to-end creation of captivating ad creatives essential for successful ad campaigns, ensuring high-quality visuals and messaging.",
-    "Developed REST APIs for microservices using the Facebook marketing API, enabling seamless creation and management of the advertising campaigns.",
-    "Established an automation testing framework for the QA team, using JavaScript and Protractor to enhance testing efficiency and accuracy.",
-    "Wrote Python scripts to collect performance statistics for tests, leading to the optimization of the framework's execution time. Achieved a significant improvement, reducing execution time from 60 minutes to 20 minutes, representing a 66.7% enhancement in efficiency.",
-  ]);
-  const experience2 = renderProject([
-    "Implemented targeted bug fixes within the Global HR and Global Payroll modules of Oracle HCM products, contributing to the overall stability and functionality of the software.",
-    "Improved user experience by optimizing database, leading to a notable enhancement in system responsiveness and efficiency.",
-    "Facilitated effective communication with customers to troubleshoot and resolve technical issues related to the products.",
-  ]);
-  const experience3 = renderProject([
-    "Built dependency-injection feature for our in-house RESTful application development framework using Java's reflection APIs and graph algorithm.",
-    "Conducted comprehensive research to identify and propose essential features, facilitating the seamless adoption of our development framework by developers. Played a pivotal role in the establishment of best practices, including advocating for test-driven development and coding standards.",
-    "Leveraged expertise in database design to contribute to the efficient structuring of project databases, enhancing overall system performance and reliability.",
-    "Provided mentorship and guidance to junior engineers, fostering their professional growth and contributing to a collaborative and innovative team environment.",
-    "Actively participated in the development of microservices for clients, significantly contributing to the successful execution and timely delivery of projects.",
-  ]);
-  const experience4 = renderProject([
-    "Primarily I was responsible for developing microservices which were migrated from legacy codebase written in F# .NET to Java using Spring Boot.",
-    "Contributed to the architectural redesign of selected microservices during the migration process, demonstrating a keen ability and interest to optimize system structures and enhance overall performance.",
-    "Effectively leveraged Microsoft Azure technologies, including CosmosDB, Change Feed Processor, and MS SQL Server, to establish a robust and resilient foundation for our microservices. This strategic implementation significantly improved data management, storage, and retrieval capabilities.",
-    "Used Apache Kafka to decouple services and follow the event-driven architecture of our system for ensuring that our systems were robust and fault-tolerant in handling large volume of traffic.",
-  ]);
+  const project1 = renderProject(
+    [
+      `
+    The Jefferson Project is a collaborative research initiative with Rensselaer Polytechnic Institute, IBM, and The Fund for Lake George. The project involves installing a network of Internet of Things (IoT) sensors throughout the lake to collect diverse environmental data.
+    Lake George, known for its recreational significance and located in upstate New York, has experienced a surge in HAB occurrences in recent years.`,
+      ` For this project I researched and built machine-learning regression models to forecast the growth of harmful algal bloom (HAB) in Lake George as a part of the Jefferson Project using a large volume of data from IOT sensors overlayed with NASA precipitation data. The models could predict the target variables with over 90% accuracy.`,
+      `
+    The research involved investigating environmental factors like solar radiation and water chemistry variables such as nitrate and nitrite nitrogen, ammonia, phosphorus, etc., and their impact on phycocyanin growth which I used as a proxy indicator for the algae.
+    `,
+    ],
+    "https://github.com/anirban-a/JeffersonProject"
+  );
+  const project2 = renderProject(
+    [
+      "Designed and developed a book exchange application with a potential to impact approximately 3.9 million users in the United States to aid university students in exchanging textbooks with ease, reducing the financial burden of purchasing new books and promoting recycling.",
+      "Facilitated the exchange of textbooks amongst peers, creating an online platform for students to lend and borrow books, thus promoting sustainability and reducing waste.",
+      "Technologies used: Java 8, Spring Boot, HTML, CSS, JQuery, MS CosmosDB",
+    ],
+    "https://github.com/anirban-a/alexandria"
+  );
+  const project3 = renderProject(
+    [
+      "Designed and developed a virtual classroom assistant web application for use by the Professors to help track student interaction and in-class activities, class, and quiz performance.",
+      "Technologies used: React, NextJS, Supabase ",
+    ],
+    ""
+  );
+  const project4 = renderProject(
+    [
+      "Used machine learning to classify hand-written digits",
+      "Wrote k-NN and feed-forward neural network in Python for the classification problem",
+      "Technologies used: Python, Pandas, NumPy",
+    ],
+    ""
+  );
 
   switch (experience) {
     case 1:
-      return experience1;
+      return project1;
     case 2:
-      return experience2;
+      return project2;
     case 3:
-      return experience3;
+      return project3;
     case 4:
-      return experience4;
+      return project4;
   }
 }
 interface Prop {
