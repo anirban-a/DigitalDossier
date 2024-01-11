@@ -1,19 +1,20 @@
 import "./App.css";
 import Avatar from "@mui/material/Avatar";
 import MenuBar from "./components/MenuBar";
-import { CssBaseline, Paper } from "@mui/material";
 
 function App() {
   return (
     <>
       {/* <CssBaseline /> */}
       <Avatar
-        src="assets/avataaars.png"
-        sizes="100"
+        src="assets/devpic.png"
+        // sizes="200"
         sx={{
-          width: 324,
-          height: 324,
-          top: 250,
+          width: "35vw",
+          height: "35vw",
+          maxHeight: 750,
+          maxWidth: 750,
+          top: 180,
           left: 70,
           position: "absolute",
           // right: 20,
