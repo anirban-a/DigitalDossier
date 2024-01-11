@@ -12,7 +12,6 @@ import Contact from "./Contact";
 import Home from "./Home";
 import Experience from "./Experience";
 import Skills from "./Skills";
-import BadgesPage from "./BadgesPage";
 
 const navItems = ["Home", "Experience", "Skills", "Contact"];
 
@@ -21,7 +20,6 @@ export default function MenuBar() {
   const [homeOpen, setHomeOpen] = useState(true);
   const [experienceOpen, setExperienceOpen] = useState(false);
   const [skillsOpen, setSkillsOpen] = useState(false);
-  const [badgesOpen, setBadgesOpen] = useState(false);
 
   type Setter = (x: boolean) => void;
   const setters: Setter[] = [

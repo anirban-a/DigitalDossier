@@ -6,7 +6,6 @@ import Badges from "./Badges";
 import Paper from "@mui/material/Paper";
 
 import RadialChart from "./RadialChart";
-import { Avatar } from "@mui/material";
 
 interface SkillsProps {
   open: boolean;

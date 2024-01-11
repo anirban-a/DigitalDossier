@@ -1,9 +1,6 @@
 import "./styles/About.css";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import Slide from "@mui/material/Slide";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Badges from "./Badges";
